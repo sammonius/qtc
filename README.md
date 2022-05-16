@@ -19,4 +19,4 @@ syntax of Qt in c++, with minor changes:
 To compile an app that uses qtc:
 1. run ```qmake -project``` as usual
 2. open the resulting .pro file and add ```LIBS += qtc```
-3. run ```qmake``` followed by ```make```
+3. run ```qmake && make```
