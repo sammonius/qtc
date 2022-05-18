@@ -4,9 +4,9 @@
 
 extern "C" {
 
-QLabel *QLabel_new(QWidget *parent)
+QLabel *QLabel_new(QString text, QWidget *parent)
 {
-	return new QLabel(parent);
+	return new QLabel(text, parent);
 }
 
 QString QLabel_text(QLabel *label)

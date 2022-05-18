@@ -10,7 +10,7 @@ int main(int argc, char **argv)
 	QApplication app = QApplication_new(&argc, argv);
 	
 	QPushButton btn = QPushButton_new(NULL, QString_new("Hello, world!"), NULL);
-	QPushButton_show(btn);
+	QWidget_show(btn);
 	
 	return QApplication_exec(&app);
 }

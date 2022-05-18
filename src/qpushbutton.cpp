@@ -28,11 +28,6 @@ void* QPushButton_new(QIcon *icon, QString text, QWidget *parent)
 	else return new QPushButton(*icon, text, parent);	
 }
 
-void QPushButton_show(QPushButton *btn)
-{
-	btn->show();
-}
-
 void QPushButton_destroy(QPushButton *pushbtn)
 {
 	delete pushbtn;

@@ -9,8 +9,6 @@ typedef unsigned char *QPushButton;
 #endif
 
 QPushButton QPushButton_new(QIcon icon, QString text, QWidget parent);
-
-void QPushButton_show(QPushButton btn);
 	
 void QPushButton_destroy(QPushButton pushbtn);
 

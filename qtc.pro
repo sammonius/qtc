@@ -21,12 +21,14 @@ HEADERS += header/qabstractbutton.h \
            header/qlabel.h \
            header/qpointer.h \
            header/qpushbutton.h \
-           header/qstring.h
+           header/qstring.h \
+           header/qwidget.h
 SOURCES += src/qabstractbutton.cpp \
            src/qapplication.cpp \
            src/qlabel.cpp \
            src/qpushbutton.cpp \
-           src/qstring.cpp
+           src/qstring.cpp \
+           src/qwidget.cpp 
 LIBS += -lqtc
 QT += widgets
 QT += core
