@@ -14,21 +14,8 @@ INCLUDEPATH += .
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 # Input
-HEADERS += header/qabstractbutton.h \
-           header/qapplication.h \
-           header/qglobal.h \
-           header/qicon.h \
-           header/qlabel.h \
-           header/qpointer.h \
-           header/qpushbutton.h \
-           header/qstring.h \
-           header/qwidget.h
-SOURCES += src/qabstractbutton.cpp \
-           src/qapplication.cpp \
-           src/qlabel.cpp \
-           src/qpushbutton.cpp \
-           src/qstring.cpp \
-           src/qwidget.cpp 
+HEADERS += header/*.h
+SOURCES += src/*.cpp
 LIBS += -lqtc
 QT += widgets
 QT += core
