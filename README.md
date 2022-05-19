@@ -14,7 +14,7 @@ syntax of Qt in c++, with minor changes:
 		QPushButton btn = QPushButton_new(NULL, "hello", NULL); /* C */
 		
 		btn.show() // C++
-		QPushButton_show(btn); /* C */
+		QWidget_show(btn); /* C */
 
 To compile an app that uses qtc:
 1. run ```qmake -project``` as usual
