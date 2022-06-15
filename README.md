@@ -20,3 +20,6 @@ To compile an app that uses qtc:
 1. run ```qmake -project``` as usual
 2. open the resulting .pro file and add ```LIBS += qtc```
 3. run ```qmake && make```
+
+#### 2022, June 15, Wednsday update: THIS PROJECT IS NOT DEAD!
+I've been working on a python script that automatically generates all the bindings by parsing a text file called ```bindings.txt```. Over the past month, I've been copying functions from the qt docs and source code into the file and it's almost finished. Once it's done (hopefully very soon), I'll publish the generated code to this repo, and the binder file/script to a subfolder in the repo (which may be a hidden file, still not sure).
