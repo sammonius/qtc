@@ -1,5 +1,9 @@
 #pragma once
-#include <qtc/qglobal.h>
+#include <qtc/qt.h>
+
+#ifndef __cplusplus
+typedef void* QAbstractScrollArea;
+#endif
 
 void QAbstractScrollArea_setVerticalScrollBarPolicy(QAbstractScrollArea a, Qt_ScrollBarPolicy p);
 Qt_ScrollBarPolicy QAbstractScrollArea_verticalScrollBarPolicy(QAbstractScrollArea a);

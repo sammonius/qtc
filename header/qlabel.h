@@ -1,13 +1,22 @@
 #pragma once
 
 #include <qtc/qstring.h>
-#include <qtc/qglobal.h>
+#include <qtc/qt.h>
+#include <qtc/qwidget.h>
+#include <qtc/private_optargs.h>
 
 #ifndef __cplusplus
-typedef unsigned char *QLabel;
+typedef void* QLabel;
 #endif
 
-QLabel QLabel_new(QString text, QWidget parent);
+
+#define QLabel_new(...) QTC_OPTARG_REGISTER(QLabel_new, __VA_ARGS__)
+#define QLabel_new1(A) _Generic((A), QString: QLabel_new_text, QWidget: QLabel_new_parent)(A)
+
+QLabel QLabel_new2(QString text, QWidget parent);
+QLabel QLabel_new_text(QString text);
+QLabel QLabel_new_parent(QWidget parent);
+QLabel QLabel_new0();
 void QLabel_destroy(QLabel label);
 
 void QLabel_setText(QLabel label, QString text);

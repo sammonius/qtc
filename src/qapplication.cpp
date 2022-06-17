@@ -10,7 +10,7 @@
 
 extern "C" {
 
-QApplication *QApplication_new(int &argc, char **argv)
+QApplication *qtc_QApplication_new(int &argc, char **argv)
 {
 	return new QApplication(argc, argv);
 }

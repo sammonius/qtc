@@ -1,6 +1,6 @@
 #pragma once
 
-ifndef __cplusplus
+#ifndef __cplusplus
 typedef unsigned char *QAbstractSlider;
 #endif
 
@@ -22,7 +22,7 @@ int QAbstractSlider_value(QAbstractSlider slider);
 void QAbstractSlider_setSliderPosition(QAbstractSlider slider, int p);
 int QAbstractSlider_sliderPosition(QAbstractSlider slider);
 
-void QAbstractSlider_setTracking(QAbstractSlider slider, bool b);s
+void QAbstractSlider_setTracking(QAbstractSlider slider, bool b);
 bool QAbstractSlider_hasTracking(QAbstractSlider slider);
 
 void QAbstractSlider_setOrientation(QAbstractSlider slider, Qt_Orientation o);

@@ -3,8 +3,8 @@
 
 #include <uchar.h>
 
-typedef unsigned char *QChar;
-typedef unsigned char *QString;
+typedef char *QChar;
+typedef char *QString;
 
 #endif //__cplusplus
 
