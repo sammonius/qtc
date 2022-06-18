@@ -20,3 +20,6 @@ LIBS += -lqtc
 QT += widgets
 QT += core
 QT += gui
+
+# allow functions to return adress of rvalue
+QMAKE_CXXFLAGS += -fpermissive

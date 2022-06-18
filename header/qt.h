@@ -174,7 +174,7 @@ typedef enum Qt_CursorShape{
 	Qt_DragCopyCursor = 19,
 	Qt_DragLinkCursor = 21,
 	Qt_BitmapCursor = 24
-} Qt_CursorShape;/*
+} Qt_CursorShape;
 typedef enum Qt_DateFormat{
 	Qt_TextDate = 0,
 	Qt_ISODate = 1,
@@ -202,7 +202,7 @@ typedef enum Qt_DockWidgetArea{
 	Qt_RightDockWidgetArea = 0x2,
 	Qt_TopDockWidgetArea = 0x4,
 	Qt_BottomDockWidgetArea = 0x8,
-	Qt_AllDockWidgetAreas = Qt_DockWidgetArea_Mask,
+	Qt_AllDockWidgetAreas = 0xE,
 	Qt_NoDockWidgetArea = 0
 } Qt_DockWidgetArea;
 typedef enum Qt_DropAction{
@@ -245,8 +245,8 @@ typedef enum Qt_FindChildOption{
 typedef enum Qt_FocusPolicy{
 	Qt_TabFocus = 0x1,
 	Qt_ClickFocus = 0x2,
-	Qt_StrongFocus = TabFocus|ClickFocus|0x8,
-	Qt_WheelFocus = StrongFocus|0x4,
+	Qt_StrongFocus = Qt_TabFocus|Qt_ClickFocus|0x8,
+	Qt_WheelFocus = Qt_StrongFocus|0x4,
 	Qt_NoFocus = 0
 } Qt_FocusPolicy;
 typedef enum Qt_FocusReason{
@@ -272,7 +272,7 @@ typedef enum Qt_GestureState{
 	Qt_GestureCanceled = 4,
 } Qt_GestureState;
 typedef enum Qt_GestureType{
-	Qt_TapGesture = ,
+	Qt_TapGesture = 0,
 	Qt_TapAndHoldGesture = 1,
 	Qt_PanGesture = 2,
 	Qt_PinchGesture = 3,
@@ -483,7 +483,7 @@ typedef enum Qt_Key{
 	Qt_Key_Direction_L = 0x01000059,
 	Qt_Key_Direction_R = 0x01000060,
 	Qt_Key_Space = 0x20,
-	Qt_Key_any = Key_Space,
+	Qt_Key_any = Qt_Key_Space,
 	Qt_Key_Exclam = 0x21,
 	Qt_Key_QuoteDbl = 0x22,
 	Qt_Key_NumberSign = 0x23,
@@ -978,8 +978,7 @@ typedef enum Qt_NavigationMode{
 	Qt_NavigationModeKeypadTabOrder = 1,
 	Qt_NavigationModeKeypadDirectional = 2,
 	Qt_NavigationModeCursorAuto = 3,
-	Qt_NavigationModeCursorAuto = 4,
-	Qt_NavigationModeCursorForceVisible = 5,
+	Qt_NavigationModeCursorForceVisible = 4,
 } Qt_NavigationMode;
 typedef enum Qt_Orientation{
 	Qt_Horizontal = 0,
@@ -1288,8 +1287,8 @@ typedef enum Qt_WindowType{
 	Qt_WindowStaysOnBottomHint = 32,
 	Qt_WindowTransparentForInput = 33,
 	Qt_WindowOverridesSystemGestures = 34,
-	Qt_WindowOverridesSystemGestures = 35,
-	Qt_WindowDoesNotAcceptFocus = 36,
-	Qt_MaximizeUsingFullscreenGeometryHint = 37,
-	Qt_WindowType_Mask = 38,
-} Qt_WindowType;*/
+	Qt_WindowDoesNotAcceptFocus = 35,
+	Qt_MaximizeUsingFullscreenGeometryHint = 36,
+	Qt_WindowType_Mask = 37,
+} Qt_WindowType;
+typedef typeof(Qt_Widget) Qt_WindowFlags; 

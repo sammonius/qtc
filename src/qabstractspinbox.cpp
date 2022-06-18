@@ -3,10 +3,10 @@
 
 extern "C" {
 
-void QAbstractSpinBox_setWrapping(QAbstractSpinBox *spinbox, bool b){spinBox->setWrapping(b);}
+void QAbstractSpinBox_setWrapping(QAbstractSpinBox *spinbox, bool b){spinbox->setWrapping(b);}
 bool QAbstractSpinBox_wrapping(QAbstractSpinBox *spinbox){return spinbox->wrapping();}
 
-void QAbstractSpinBox_setFrame(QAbstractSpinBox *spinbox, bool b){spinBox->setFrame(b);}
+void QAbstractSpinBox_setFrame(QAbstractSpinBox *spinbox, bool b){spinbox->setFrame(b);}
 bool QAbstractSpinBox_hasFrame(QAbstractSpinBox *spinbox){return spinbox->hasFrame();}
 
 void QAbstractSpinBox_setAlignment(QAbstractSpinBox *spinbox, Qt::Alignment a){spinbox->setAlignment(a);}
@@ -21,11 +21,10 @@ QAbstractSpinBox::ButtonSymbols QAbstractSpinBox_buttonSymbols(QAbstractSpinBox 
 void QAbstractSpinBox_setSpecialValueText(QAbstractSpinBox *spinbox, QString *text){spinbox->setSpecialValueText(*text);}
 QString *QAbstractSpinBox_specialValueText(QAbstractSpinBox *spinbox){return &spinbox->specialValueText();}
 
-void QAbstractSpinBox_setText(QAbstractSpinBox *spinbox, QString *text){spinbox->setText(*text);}
 QString *QAbstractSpinBox_text(QAbstractSpinBox *spinbox){return &spinbox->text();}
 
 void QAbstractSpinBox_setAcccelerated(QAbstractSpinBox *spinbox, bool b){spinbox->setAccelerated(b);}
-bool QAbstractSpinBox_isAcccelerated(QAbstractSpinBox *spinbox){return spinbox->accelerated();}
+bool QAbstractSpinBox_isAcccelerated(QAbstractSpinBox *spinbox){return spinbox->isAccelerated();}
 
 void QAbstractSpinBox_setCorrectionMode(QAbstractSpinBox *spinbox, QAbstractSpinBox::CorrectionMode mode){spinbox->setCorrectionMode(mode);}
 QAbstractSpinBox::CorrectionMode QAbstractSpinBox_correctionMode(QAbstractSpinBox *spinbox){return spinbox->correctionMode();}
