@@ -8,4 +8,4 @@ typedef char *QString;
 
 #endif //__cplusplus
 
-QString QString_new(char *text);
+inline QString QString_new(char *text);

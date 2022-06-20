@@ -21,5 +21,5 @@ QT += widgets
 QT += core
 QT += gui
 
-# allow functions to return adress of rvalue
+# allow functions to return adress of rvalue, which will be fine because they are inline.
 QMAKE_CXXFLAGS += -fpermissive

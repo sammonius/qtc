@@ -4,4 +4,4 @@
 typedef void* QWidget;
 #endif
 
-void QWidget_show(QWidget w);
+inline void QWidget_show(QWidget w);
