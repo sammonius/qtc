@@ -2,6 +2,7 @@
 #include<QString>
 #include<QIcon>
 #include<QSize>
+#include<cstdio>
 
 extern "C" {
 
@@ -35,7 +36,8 @@ int QAbstractButton_autoRepeatInterval(QAbstractButton *btn){return btn->autoRep
 void QAbstractButton_setAutoExclusive(QAbstractButton *btn, bool b){btn->setAutoExclusive(b);}
 bool QAbstractButton_autoExclusive(QAbstractButton *btn){return btn->autoExclusive();}
 
-
 QButtonGroup *QAbstractButton_group(QAbstractButton *btn){return btn->group();}
+
+void(QAbstractButton::*QAbstractButton_click)() = &QAbstractButton::click;
 
 }

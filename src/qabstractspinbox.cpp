@@ -1,5 +1,6 @@
 #include <Qt>
 #include <QAbstractSpinBox>
+#include <qtc/private_returnpointer.h>
 
 extern "C" {
 
@@ -19,9 +20,9 @@ void QAbstractSpinBox_setButtonSymbols(QAbstractSpinBox *spinbox, QAbstractSpinB
 QAbstractSpinBox::ButtonSymbols QAbstractSpinBox_buttonSymbols(QAbstractSpinBox *spinbox){return spinbox->buttonSymbols();}
 
 void QAbstractSpinBox_setSpecialValueText(QAbstractSpinBox *spinbox, QString *text){spinbox->setSpecialValueText(*text);}
-QString *QAbstractSpinBox_specialValueText(QAbstractSpinBox *spinbox){return &spinbox->specialValueText();}
+QString *QAbstractSpinBox_specialValueText(QAbstractSpinBox *spinbox){QTC_RETURN_POINTER(QString, spinbox->specialValueText())}
 
-QString *QAbstractSpinBox_text(QAbstractSpinBox *spinbox){return &spinbox->text();}
+QString *QAbstractSpinBox_text(QAbstractSpinBox *spinbox){QTC_RETURN_POINTER(QString, spinbox->text())}
 
 void QAbstractSpinBox_setAcccelerated(QAbstractSpinBox *spinbox, bool b){spinbox->setAccelerated(b);}
 bool QAbstractSpinBox_isAcccelerated(QAbstractSpinBox *spinbox){return spinbox->isAccelerated();}

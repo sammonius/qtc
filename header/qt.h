@@ -1111,6 +1111,7 @@ typedef enum Qt_ToolBarArea{
 	Qt_AllToolBarAreas = 4,
 	Qt_NoToolBarArea = 5,
 } Qt_ToolBarArea;
+typedef Qt_ToolBarArea Qt_ToolBarAreas;
 typedef enum Qt_ToolButtonStyle{
 	Qt_ToolButtonIconOnly = 0,
 	Qt_ToolButtonTextOnly = 1,

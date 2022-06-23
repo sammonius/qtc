@@ -1,0 +1,1 @@
+#import <QtCore/qglobal.h>

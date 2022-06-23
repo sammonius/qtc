@@ -2,8 +2,8 @@
 #include <qtc/qt.h>
 
 #ifndef __cplusplus
-typedef unsigned char QApplication;
-typedef unsigned char QCoreApplication;
+typedef void* QApplication;
+typedef void* QCoreApplication;
 #endif
 
 #define QApplication_new(argc, argv) qtc_QApplication_new(&argc, argv)

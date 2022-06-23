@@ -2,7 +2,6 @@
 #include <QMdiSubWindow>
 #include <Qt>
 #include <QTabWidget>
-#include <qtc/private_pointerize.h>
 
 extern "C" {
 
@@ -47,6 +46,6 @@ void QMdiArea_setOption3(QMdiArea *area, QMdiArea::AreaOption option, bool on){a
 void QMdiArea_setOption2(QMdiArea *area, QMdiArea::AreaOption option){area->setOption(option);}
 bool QMdiArea_testOption(QMdiArea *area, QMdiArea::AreaOption option){return area->testOption(option);};
 
-void(QMdiArea::*QMdiArea_subWindowActivated)(QMdiSubWindow*) = &QMdiArea::subWindowActivated;
+//void(QMdiArea::*QMdiArea_subWindowActivated)(QMdiSubWindow*) = &QMdiArea::subWindowActivated;
 
 }
