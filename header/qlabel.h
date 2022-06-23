@@ -1,5 +1,6 @@
 #pragma once
 
+#include <stdbool.h>
 #include <qtc/qstring.h>
 #include <qtc/qt.h>
 #include <qtc/qwidget.h>
