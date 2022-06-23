@@ -27,37 +27,37 @@ typedef enum QAbstractSpinBox_StepType {
 	QAbstractSpinBox_AdaptiveDecimalStepType = 1
 } QAbstractSpinBox_StepType;
 
-inline void QAbstractSpinBox_setWrapping(QAbstractSpinBox spinbox, bool b);
-inline bool QAbstractSpinBox_wrapping(QAbstractSpinBox spinbox);
+static inline void QAbstractSpinBox_setWrapping(QAbstractSpinBox spinbox, bool b);
+static inline bool QAbstractSpinBox_wrapping(QAbstractSpinBox spinbox);
 
-inline void QAbstractSpinBox_setFrame(QAbstractSpinBox spinbox, bool b);
-inline bool QAbstractSpinBox_hasFrame(QAbstractSpinBox spinbox);
+static inline void QAbstractSpinBox_setFrame(QAbstractSpinBox spinbox, bool b);
+static inline bool QAbstractSpinBox_hasFrame(QAbstractSpinBox spinbox);
 
-inline void QAbstractSpinBox_setAlignment(QAbstractSpinBox spinbox, Qt_Alignment a);
-inline Qt_Alignment QAbstractSpinBox_alignment(QAbstractSpinBox spinbox);
+static inline void QAbstractSpinBox_setAlignment(QAbstractSpinBox spinbox, Qt_Alignment a);
+static inline Qt_Alignment QAbstractSpinBox_alignment(QAbstractSpinBox spinbox);
 
-inline void QAbstractSpinBox_setReadOnly(QAbstractSpinBox spinbox, bool b);
-inline bool QAbstractSpinBox_isReadOnly(QAbstractSpinBox spinbox);
+static inline void QAbstractSpinBox_setReadOnly(QAbstractSpinBox spinbox, bool b);
+static inline bool QAbstractSpinBox_isReadOnly(QAbstractSpinBox spinbox);
 
-inline void QAbstractSpinBox_setButtonSymbols(QAbstractSpinBox spinbox, QAbstractSpinBox_ButtonSymbols symbols);
-inline QAbstractSpinBox_ButtonSymbols QAbstractSpinBox_buttonSymbols(QAbstractSpinBox spinbox);
+static inline void QAbstractSpinBox_setButtonSymbols(QAbstractSpinBox spinbox, QAbstractSpinBox_ButtonSymbols symbols);
+static inline QAbstractSpinBox_ButtonSymbols QAbstractSpinBox_buttonSymbols(QAbstractSpinBox spinbox);
 
-inline void QAbstractSpinBox_setSpecialValueText(QAbstractSpinBox spinbox, QString *text);
-inline QString *QAbstractSpinBox_specialValueText(QAbstractSpinBox spinbox);
+static inline void QAbstractSpinBox_setSpecialValueText(QAbstractSpinBox spinbox, QString *text);
+static inline QString *QAbstractSpinBox_specialValueText(QAbstractSpinBox spinbox);
 
-inline void QAbstractSpinBox_setText(QAbstractSpinBox spinbox, QString *text);
-inline QString *QAbstractSpinBox_text(QAbstractSpinBox spinbox);
+static inline void QAbstractSpinBox_setText(QAbstractSpinBox spinbox, QString *text);
+static inline QString *QAbstractSpinBox_text(QAbstractSpinBox spinbox);
 
-inline void QAbstractSpinBox_setAcccelerated(QAbstractSpinBox spinbox, bool b);
-inline bool QAbstractSpinBox_isAcccelerated(QAbstractSpinBox spinbox);
+static inline void QAbstractSpinBox_setAcccelerated(QAbstractSpinBox spinbox, bool b);
+static inline bool QAbstractSpinBox_isAcccelerated(QAbstractSpinBox spinbox);
 
-inline void QAbstractSpinBox_setCorrectionMode(QAbstractSpinBox spinbox, QAbstractSpinBox_CorrectionMode mode);
-inline QAbstractSpinBox_CorrectionMode QAbstractSpinBox_correctionMode(QAbstractSpinBox spinbox);
+static inline void QAbstractSpinBox_setCorrectionMode(QAbstractSpinBox spinbox, QAbstractSpinBox_CorrectionMode mode);
+static inline QAbstractSpinBox_CorrectionMode QAbstractSpinBox_correctionMode(QAbstractSpinBox spinbox);
 
-inline bool QAbstractSpinBox_hasAcceptableInput(QAbstractSpinBox spinbox);
+static inline bool QAbstractSpinBox_hasAcceptableInput(QAbstractSpinBox spinbox);
 
-inline void QAbstractSpinBox_setKeyboardTracking(QAbstractSpinBox spinbox, bool b);
-inline bool QAbstractSpinBox_keyboardTracking(QAbstractSpinBox spinbox);
+static inline void QAbstractSpinBox_setKeyboardTracking(QAbstractSpinBox spinbox, bool b);
+static inline bool QAbstractSpinBox_keyboardTracking(QAbstractSpinBox spinbox);
 
-inline void QAbstractSpinBox_setGroupSeparatorShown(QAbstractSpinBox spinbox, bool b);
-inline bool QAbstractSpinBox_isGroupSeparatorShown(QAbstractSpinBox spinbox);
+static inline void QAbstractSpinBox_setGroupSeparatorShown(QAbstractSpinBox spinbox, bool b);
+static inline bool QAbstractSpinBox_isGroupSeparatorShown(QAbstractSpinBox spinbox);

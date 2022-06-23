@@ -6,6 +6,6 @@ typedef void* QObject;
 
 #include <qtc/qstring.h>
 
-inline void QObject_connect(QObject *sender, char *signal, QObject *receiver, char *slot);
+static inline void QObject_connect(QObject *sender, char *signal, QObject *receiver, char *slot);
 
 

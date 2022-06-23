@@ -98,9 +98,9 @@ enums and QFlags* )
 
 Now that we have finished our header, we can save a copy of it in ./src with the
 file extention set to .cpp to use as a template for our code. After saving the
-copy, go back to the header and add "```inline```" at the start of each function
-declaration. (this was only not done earlier so that you wouldn't have to undo
-it in the C++ copy).
+copy, go back to the header and add "```static inline```" at the start of each
+function declaration. (this was only not done earlier so that you wouldn't have
+to undo it in the C++ copy).
 
 # C++ 
 

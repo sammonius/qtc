@@ -6,7 +6,7 @@ typedef void* QWidget;
 
 #include <qtc/qlayout.h>
 
-inline void QWidget_show(QWidget w);
+static inline void QWidget_show(QWidget w);
 
-inline void QWidget_setLayout(QWidget widget, QLayout layout);
-inline QLayout QWidget_layout(QWidget widget);
+static inline void QWidget_setLayout(QWidget widget, QLayout layout);
+static inline QLayout QWidget_layout(QWidget widget);

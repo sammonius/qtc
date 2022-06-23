@@ -7,7 +7,7 @@ typedef void* QSizeGrip;
 #include <qtc/qwidget.h>
 #include <qtc/qsize.h>
 
-QSizeGrip QSizeGrip_new(QWidget parent);
+static inline QSizeGrip QSizeGrip_new(QWidget parent);
 
-QSize QSizeGrip_minimumSizeHint(QSizeGrip grip);
-QSize QSizeGrip_sizeHint(QSizeGrip grip);
+static inline QSize QSizeGrip_minimumSizeHint(QSizeGrip grip);
+static inline QSize QSizeGrip_sizeHint(QSizeGrip grip);

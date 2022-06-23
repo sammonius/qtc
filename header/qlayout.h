@@ -13,5 +13,5 @@ typedef enum QLayout_SizeConstraint {
 	QLayout_SetNoConstraint = 1
 } QLayout_SizeConstraint;
 
-inline QLayout_SizeConstraint QLayout_sizeConstraint(QLayout layout);
-inline void QLayout_setSizeConstraint(QLayout layout, QLayout_SizeConstraint sc);
+static inline QLayout_SizeConstraint QLayout_sizeConstraint(QLayout layout);
+static inline void QLayout_setSizeConstraint(QLayout layout, QLayout_SizeConstraint sc);
