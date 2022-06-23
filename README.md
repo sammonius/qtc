@@ -10,11 +10,21 @@ Documentation is coming soon, but be sure to check the
 examples folder. Generally, the syntax is equal to the
 syntax of Qt in c++, with minor changes:
 
-		QPushButton btn = new QPushButton("hello"); // C++
-		QPushButton btn = QPushButton_new(NULL, "hello", NULL); /* C */
-		
-		btn.show() // C++
-		QWidget_show(btn); /* C */
+	#include <qtc/qapplication.h>
+	#include <qtc/qlabel.h>
+	#include <qtc/qwidget.h>
+	#include <qtc/qt.h>
+	#include <qtc/qstring.h>
+
+	int main(int argc, char** argv){
+		QApplication app = QApplication_new(argc, argv);
+		QLabel mylabel = QLabel_new(QString_new("Hello there!"));
+
+		QLabel_setAlignment(mylabel, Qt_AlignCenter);
+
+		QWidget_show(mylabel);
+		QApplication_exec(app);
+	}
 
 To compile an app that uses qtc:
 1. run ```qmake -project``` as usual
