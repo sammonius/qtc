@@ -1,6 +1,12 @@
 #pragma once
 
-typedef enum Qt_AlignmentFlag{
+/***************************************
+*
+*	This file is very, very not done.
+*
+****************************************/
+
+typedef enum Qt_AlignmentFlag {
 	Qt_AlignLeft = 0x0001,
 	Qt_AlignRight = 0x0002,
 	Qt_AlignHCenter = 0x0004,
@@ -16,7 +22,7 @@ typedef enum Qt_AlignmentFlag{
 	Qt_AlignHorizontal_Mask = Qt_AlignLeft|Qt_AlignRight|Qt_AlignHCenter|Qt_AlignJustify|Qt_AlignAbsolute,
 	Qt_AlignVertical_Mask = Qt_AlignTop|Qt_AlignBottom|Qt_AlignVCenter|Qt_AlignBaseline
 } Qt_AlignmentFlag;
-typedef typeof(Qt_AlignmentFlag) Qt_Alignment;
+typedef Qt_AlignmentFlag Qt_Alignment;
 typedef enum Qt_AnchorPoint{
 	Qt_AnchorLeft = 0,
 	Qt_AnchorHorizontalCenter = 1,
@@ -1292,4 +1298,4 @@ typedef enum Qt_WindowType{
 	Qt_MaximizeUsingFullscreenGeometryHint = 36,
 	Qt_WindowType_Mask = 37,
 } Qt_WindowType;
-typedef typeof(Qt_Widget) Qt_WindowFlags; 
+typedef Qt_WindowType Qt_WindowFlags; 
