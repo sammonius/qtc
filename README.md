@@ -1,5 +1,3 @@
-(This project is abandoned since I just realized it's extremely easy to use C++ code in C and vice verca)
-
 # qtc
 A far from complete C interface for Qt.
 
