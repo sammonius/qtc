@@ -3,7 +3,7 @@ project(QtC)
 
 #====== Global Configurations ==================#
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_VERBOSE_MAKEFILE ON)
 
@@ -18,8 +18,10 @@ set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS true)
 find_package(Qt5 COMPONENTS Core Widgets Gui REQUIRED)
 
 #=============== Target Configurations ============#
-
-include_directories(qtc)
+set(QTC_INCLUDE_DIR
+    "header"
+)
+include_directories(${QTC_INCLUDE_DIR})
 set(SRC
 	"src/qabstractbutton.cpp"
 	"src/qaction.cpp"
@@ -45,12 +47,9 @@ set(SRC
 	"src/qtoolbar.cpp"
 )
 # --------------------------------------------------#
-add_library( qtc SHARED ${SRC} )
+add_library( qtc SHARED ${SRC} ${QTC_INCLUDE_DIR})
 target_link_libraries( qtc PRIVATE Qt5::Core Qt5::Gui Qt5::Widgets )      
 
-# add_executable( client1  client1.c )
-# target_link_libraries( client1  qtwrapper )      
-
-# add_executable( client2 client.cpp)
-# target_link_libraries( client2  qtwrapper )      
-
+add_executable( hello_world  "examples/Hello_world/test.c" )
+target_include_directories(hello_world PRIVATE ${QTC_INCLUDE_DIR})
+target_link_libraries( hello_world  qtc )      
