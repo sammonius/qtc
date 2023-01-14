@@ -1,5 +1,5 @@
 # qtc
-A far from complete C interface for Qt.
+A work-in-progress C interface for Qt.
 
 ## compiling
 To compile qtc, you can just run the install.sh file.
