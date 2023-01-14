@@ -23,23 +23,23 @@ QToolButton QToolButton_new0();
 QToolButton QToolButton_new1(QWidget parent);
 void QToolButton_destroy(QToolButton btn);
 
-static inline Qt_ArrowType QToolButton_arrowType(QToolButton btn);
-static inline void QToolButton_setArrowType(QToolButton btn, Qt_ArrowType arrowtype);
+  Qt_ArrowType QToolButton_arrowType(QToolButton btn);
+  void QToolButton_setArrowType(QToolButton btn, Qt_ArrowType arrowtype);
 
-static inline bool QToolButton_autoRaise(QToolButton btn);
-static inline void QToolButton_setAutoRaise(QToolButton btn, bool autoraise);
+  bool QToolButton_autoRaise(QToolButton btn);
+  void QToolButton_setAutoRaise(QToolButton btn, bool autoraise);
 
-static inline QAction QToolButton_defaultAction(QToolButton btn);
-static inline void QToolButton_setDefaultAction(QToolButton btn, QAction action);
+  QAction QToolButton_defaultAction(QToolButton btn);
+  void QToolButton_setDefaultAction(QToolButton btn, QAction action);
 
-static inline static inline Qt_ToolButtonStyle QToolButton_toolButtonStyle(QToolButton btn);
-static inline void QToolButton_setToolButtonStyle(QToolButton btn, Qt_ToolButtonStyle toolButtonStyle);
+    Qt_ToolButtonStyle QToolButton_toolButtonStyle(QToolButton btn);
+  void QToolButton_setToolButtonStyle(QToolButton btn, Qt_ToolButtonStyle toolButtonStyle);
 
-static inline QToolButton_ToolButtonPopupMode QToolButton_popupMode(QToolButton btn);
-static inline void QToolButton_setPopupMode(QToolButton btn, QToolButton_ToolButtonPopupMode popupMode);
+  QToolButton_ToolButtonPopupMode QToolButton_popupMode(QToolButton btn);
+  void QToolButton_setPopupMode(QToolButton btn, QToolButton_ToolButtonPopupMode popupMode);
 
-static inline QMenu QToolButton_menu(QToolButton btn);
-static inline void QToolButton_setMenu(QToolButton btn, QMenu menu);
+  QMenu QToolButton_menu(QToolButton btn);
+  void QToolButton_setMenu(QToolButton btn, QMenu menu);
 
-static inline QSize QToolButton_sizeHint(QToolButton btn);
-static inline QSize QToolButton_minimumSizeHint(QToolButton btn);
+  QSize QToolButton_sizeHint(QToolButton btn);
+  QSize QToolButton_minimumSizeHint(QToolButton btn);

@@ -14,29 +14,29 @@ typedef void* QLabel;
 #define QLabel_new(...) QTC_OPTARG_REGISTER(QLabel_new, __VA_ARGS__)
 #define QLabel_new1(A) _Generic((A), QString: QLabel_new_text, QWidget: QLabel_new_parent)(A)
 
-static inline QLabel QLabel_new2(QString text, QWidget parent);
-static inline QLabel QLabel_new_text(QString text);
-static inline QLabel QLabel_new_parent(QWidget parent);
-static inline QLabel QLabel_new0();
-static inline void QLabel_destroy(QLabel label);
+  QLabel QLabel_new2(QString text, QWidget parent);
+  QLabel QLabel_new_text(QString text);
+  QLabel QLabel_new_parent(QWidget parent);
+  QLabel QLabel_new0();
+  void QLabel_destroy(QLabel label);
 
-static inline void QLabel_setText(QLabel label, QString text);
-static inline QString QLabel_text(QLabel label);
+  void QLabel_setText(QLabel label, QString text);
+  QString QLabel_text(QLabel label);
 
-static inline Qt_Alignment QLabel_alignment(QLabel label);
-static inline void QLabel_setAlignment(QLabel label, Qt_Alignment align);
+  Qt_Alignment QLabel_alignment(QLabel label);
+  void QLabel_setAlignment(QLabel label, Qt_Alignment align);
 
-static inline bool QLabel_hasScaledContents(QLabel label);
-static inline void QLabel_setScaledContents(QLabel label, bool b);
+  bool QLabel_hasScaledContents(QLabel label);
+  void QLabel_setScaledContents(QLabel label, bool b);
 
-static inline int QLabel_margin(QLabel label);
-static inline void QLabel_setMargin(QLabel label, int margin);
+  int QLabel_margin(QLabel label);
+  void QLabel_setMargin(QLabel label, int margin);
 
-static inline int QLabel_indent(QLabel label);
-static inline void QLabel_setIndent(QLabel label, int indent);
+  int QLabel_indent(QLabel label);
+  void QLabel_setIndent(QLabel label, int indent);
 
-static inline bool QLabel_openExternalLinks(QLabel label);
-static inline void QLabel_setOpenExternalLinks(QLabel label, bool b);
+  bool QLabel_openExternalLinks(QLabel label);
+  void QLabel_setOpenExternalLinks(QLabel label, bool b);
 
-static inline bool QLabel_hasSelectedText(QLabel label);
-static inline QString QLabel_selectedText(QLabel label);
+  bool QLabel_hasSelectedText(QLabel label);
+  QString QLabel_selectedText(QLabel label);

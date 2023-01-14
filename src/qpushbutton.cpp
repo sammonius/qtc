@@ -1,4 +1,5 @@
 #include <QPushButton>
+#include <qtc/private_signal.h>
 
 extern "C" {
 
@@ -19,5 +20,7 @@ void QPushButton_setFlat(QPushButton *pushbtn, bool b){pushbtn->setFlat(b);}
 bool QPushButton_isFlat(QPushButton *pushbtn){return pushbtn->isFlat();}
 
 void QPushButton_setMenu(QPushButton *pushbtn, QMenu *menu){pushbtn->setMenu(menu);}
+
+void(QPushButton::*QPushButton_clicked)(bool) = &QPushButton::clicked;
 
 }

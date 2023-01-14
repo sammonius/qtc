@@ -1,8 +1,5 @@
-#include<QAbstractButton>
-#include<QString>
-#include<QIcon>
-#include<QSize>
-#include<cstdio>
+#include <QAbstractButton>
+#include <qtc/private_signal.h>
 
 extern "C" {
 

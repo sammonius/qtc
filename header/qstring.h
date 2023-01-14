@@ -3,9 +3,8 @@
 
 #include <uchar.h>
 
-typedef char *QChar;
-typedef char *QString;
+typedef char* QString;
 
 #endif //__cplusplus
 
-static inline QString QString_new(char *text);
+  QString QString_new(char *text);

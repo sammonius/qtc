@@ -1,0 +1,5 @@
+#pragma once
+
+#define QTC_DEFINE_SIGNAL(OBJ, FUNC, PARAMS) void(OBJ::OBJ_FUNC)PARAMS = &OBJ::FUNC;
+
+#define QTC_DECLARE_SIGNAL(OBJ, FUNC) void(*OBJ_FUNC)();
