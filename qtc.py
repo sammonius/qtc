@@ -1,5 +1,4 @@
-# Copyright (C) 2021 The Qt Company Ltd.
-# SPDX-License-Identifier: LicenseRef-Qt-Commercial OR GPL-3.0-only WITH Qt-GPL-exception-1.0s
+# This is a utility used for generating the bindings
 
 import sys
 if sys.version_info < (3,5):
