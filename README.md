@@ -1,6 +1,8 @@
 # qtc
 A work-in-progress C interface for Qt.
 
+(**NOTE**: Development of this is frozen for now. I'm hoping to eventually make a script that generates declarations of the mangled names of Qt's C++ functions for different ABI's, and generate macros that define their actual names as their mangled names. I'm working on other projects for now though but hopefully this is done soon. I'm just kinda sick of unsuccessfully messing with C++ and python scripts so I've been working on other projects for now. The data below should still apply once this script is finished, but I'll change it as necessary once that actually happens)
+
 ## compiling
 To compile qtc, you can just run the install.sh file.
 ```sudo sh install.sh``` should do the trick.
