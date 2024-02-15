@@ -1,4 +1,4 @@
-### This project is long dead. Sorry to dissappoint :(.
+### This project is long dead. Sorry to dissappoint :(
 
 # qtc
 A work-in-progress C interface for Qt.
